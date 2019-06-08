@@ -1,1 +1,1 @@
-Sovelluksen Heroku-osoite: https://puhelinluettelo-fullstack-app.herokuapp.com/
+Part 3 heroku app
