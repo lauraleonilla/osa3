@@ -1,0 +1,1 @@
+Sovelluksen Heroku-osoite: https://puhelinluettelo-fullstack-app.herokuapp.com/

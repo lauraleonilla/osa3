@@ -1,0 +1,36 @@
+{
+  "name": "fullstack-part3",
+  "version": "1.0.0",
+  "description": "Part 3 assignments",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauraleonilla/fullstack-part3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauraleonilla/fullstack-part3/issues"
+  },
+  "homepage": "https://github.com/lauraleonilla/fullstack-part3#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "eslint": "^5.16.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.12",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.13.0"
+  }
+}
