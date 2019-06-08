@@ -9,17 +9,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ."
   },
-  "proxy": "http://localhost:3001",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lauraleonilla/fullstack-part3.git"
+    "url": "git+https://github.com/lauraleonilla/osa3-heroku"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lauraleonilla/fullstack-part3/issues"
+    "url": "https://github.com/lauraleonilla/osa3-heroku/issues"
   },
-  "homepage": "https://github.com/lauraleonilla/fullstack-part3#readme",
+  "homepage": "https://github.com/lauraleonilla/osa3-heroku#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
