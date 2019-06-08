@@ -31,10 +31,16 @@ app.get('/info', (req, res) => {
   })
 })
 
-app.get('/api/persons/:id', (req, res) => {
-  Contact.findById(req.params.id).then(person => {
-    res.json(person.toJSON())
-  })
+app.get('/api/persons/:id', (req, res, next) => {
+  Contact.findById(req.params.id)
+    .then(person => {
+      if (person) {
+        res.json(person.toJSON())
+      } else {
+        res.status(404).end()
+      }
+    })
+    .catch(error => next(error))
 })
 
 app.delete('/api/persons/:id', (req, res, next) => {
@@ -54,9 +60,11 @@ app.post('/api/persons', (req, res, next) => {
     name: body.name,
     number: body.number
   })
-  contact.save().then(savedContact => {
-    res.json(savedContact.toJSON())
-  })
+  contact
+    .save()
+    .then(savedContact => {
+      res.json(savedContact.toJSON())
+    })
     .catch(error => next(error))
 })
 
